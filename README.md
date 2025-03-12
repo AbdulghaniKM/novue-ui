@@ -41,10 +41,23 @@ Use it in your Vue component:
 
 ```vue
 <template>
-  <NButton variant="primary">Click me</NButton>
+  <div class="flex flex-col gap-4">
+      <Button label="Primary 8" variant="solid" startIcon="mdi:check" />
+      <Button
+        label="Loading Button"
+        variant="soft"
+        loading
+        loadingLabel="please..."
+        shape="rounded"
+      />
+      <Button label="Outline Button" variant="outline" />
+      <Button label="Gradient Button" variant="gradient" />
+      <Button startIcon="mdi:heart" variant="soft" iconOnly size="lg" />
+      <Button label="Settings" shape="pill" endIcon="mdi:cog" variant="ghost" />
+    </div>
 </template>
 <script setup>
-import NButton from './components/ui/button.vue'
+import Button from './components/ui/button.vue'
 </script>
 ```
 
