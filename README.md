@@ -17,7 +17,7 @@ npx novue-ui init
 import tailwindcss from "@tailwindcss/vite";
 
 export default {
-  plugins: [tailwindcss()],
+  plugins: [vue(),tailwindcss()],
 };
 ```
 
@@ -43,6 +43,9 @@ Use it in your Vue component:
 <template>
   <NButton variant="primary">Click me</NButton>
 </template>
+<script setup>
+import NButton from './components/ui/button.vue'
+</script>
 ```
 
 More components coming soon!
